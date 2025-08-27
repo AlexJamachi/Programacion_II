@@ -12,17 +12,14 @@ public class EcuacionLineal {
     public boolean tieneSolucion() {
         return (a * d - b * c) != 0;
     }
-<<<<<<< HEAD
     public double obtenerX() {
         return (e * d - b * f) / (a * d - b * c);
     }
     public double obtenerY() {
-=======
     public double getX() {
         return (e * d - b * f) / (a * d - b * c);
     }
     public double getY() {
->>>>>>> 51710fa3fd02d4ba657c05d48f1ae2fd49b8b848
         return (a * f - e * c) / (a * d - b * c);
     }
 }
