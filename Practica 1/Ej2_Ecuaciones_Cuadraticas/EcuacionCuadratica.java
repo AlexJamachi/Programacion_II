@@ -6,19 +6,19 @@ public class EcuacionCuadratica {
         this.b = b;
         this.c = c;
     }
-    public double obtenerDiscriminante() {
+    public double getDiscriminante() {
         return b * b - 4 * a * c;
     }
-    public double obtenerRaiz1() {
-        if (obtenerDiscriminante() >= 0) {
-            return (-b + Math.sqrt(obtenerDiscriminante())) / (2 * a);
+    public double getRaiz1() {
+        if (getDiscriminante() >= 0) {
+            return (-b + Math.sqrt(getDiscriminante())) / (2 * a);
         } else {
             return 0;
         }
     }
-    public double obtenerRaiz2() {
-        if (obtenerDiscriminante() >= 0) {
-            return (-b - Math.sqrt(obtenerDiscriminante())) / (2 * a);
+    public double getRaiz2() {
+        if (getDiscriminante() >= 0) {
+            return (-b - Math.sqrt(getDiscriminante())) / (2 * a);
         } else {
             return 0;
         }
